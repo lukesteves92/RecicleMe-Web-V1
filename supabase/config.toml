@@ -1,0 +1,4 @@
+project_id = "gvwkpidbubfqhhcbwanu"
+
+[functions.watson-chat]
+verify_jwt = false
