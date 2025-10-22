@@ -28,10 +28,10 @@ const Sobre = () => {
             <CardContent className="p-8">
               <div className="flex items-center gap-4 mb-4">
                 <Recycle className="w-12 h-12" />
-                <h1 className="text-4xl font-bold">Sobre o ReUse</h1>
+                <h1 className="text-4xl font-bold">Sobre o Recicle.me</h1>
               </div>
               <p className="text-lg opacity-90">
-                Uma iniciativa sustentável que conecta pessoas comprometidas com o meio ambiente
+                Um projeto acadêmico da FIAP que se tornou uma plataforma para transformar a reciclagem no Brasil
               </p>
             </CardContent>
           </Card>
@@ -46,15 +46,23 @@ const Sobre = () => {
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-muted-foreground leading-relaxed">
-                O <span className="font-semibold text-foreground">ReUse</span> nasceu de um projeto acadêmico desenvolvido por{" "}
-                <span className="font-semibold text-primary">Lucas Esteves</span> para o curso da{" "}
-                <span className="font-semibold text-foreground">FIAP</span>, uma das principais instituições de ensino em tecnologia do Brasil.
+                O <span className="font-semibold text-foreground">Recicle.me</span> nasceu como um{" "}
+                <span className="font-semibold text-primary">Trabalho de Conclusão de Curso (TCC)</span> desenvolvido na{" "}
+                <span className="font-semibold text-foreground">FIAP</span> (Faculdade de Informática e Administração Paulista), 
+                uma das principais instituições de ensino em tecnologia e inovação do Brasil.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                O objetivo principal era criar uma solução tecnológica que promovesse a <span className="font-semibold text-foreground">sustentabilidade</span> e 
-                incentivasse práticas conscientes de descarte e reciclagem de materiais. Inspirado pela urgência das questões ambientais 
-                e pela necessidade de engajamento coletivo, o projeto foi idealizado para transformar a forma como as pessoas lidam com 
-                seus resíduos recicláveis.
+                O projeto foi criado com o objetivo de unir <span className="font-semibold text-foreground">tecnologia e sustentabilidade</span>, 
+                abordando um dos maiores desafios ambientais da atualidade: o descarte inadequado de resíduos recicláveis. 
+                Através de uma plataforma web moderna e intuitiva, buscamos facilitar o acesso a pontos de coleta, 
+                educar sobre práticas corretas de reciclagem e incentivar a participação ativa da população através de gamificação.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                O trabalho acadêmico se concentrou em desenvolver uma solução completa que integrasse tecnologias como{" "}
+                <span className="font-semibold text-foreground">geolocalização</span>,{" "}
+                <span className="font-semibold text-foreground">inteligência artificial</span> para suporte ao usuário, e{" "}
+                <span className="font-semibold text-foreground">sistemas de recompensa</span> para engajamento contínuo, 
+                provando que é possível unir inovação tecnológica com responsabilidade ambiental.
               </p>
             </CardContent>
           </Card>
@@ -69,9 +77,10 @@ const Sobre = () => {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground leading-relaxed">
-                Facilitar o descarte consciente de materiais recicláveis, conectando cidadãos a pontos de coleta 
-                e recompensando boas práticas ambientais. Acreditamos que pequenas ações individuais, quando somadas, 
-                geram um impacto significativo na preservação do nosso planeta.
+                Democratizar o acesso à reciclagem consciente através da tecnologia, conectando cidadãos a pontos de coleta 
+                e transformando a sustentabilidade em um hábito gratificante. Queremos provar que a educação ambiental aliada 
+                à inovação tecnológica pode gerar mudanças reais no comportamento da sociedade, contribuindo para um futuro 
+                mais sustentável e consciente.
               </p>
             </CardContent>
           </Card>
@@ -147,13 +156,14 @@ const Sobre = () => {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Cada coleta registrada no ReUse representa não apenas materiais desviados de aterros sanitários, 
-                mas também uma mudança de mentalidade. Estamos construindo uma comunidade de pessoas comprometidas 
-                com a sustentabilidade, provando que tecnologia e consciência ambiental podem caminhar juntas.
+                Cada coleta registrada no Recicle.me representa não apenas materiais desviados de aterros sanitários, 
+                mas também uma mudança de mentalidade. Como projeto acadêmico, demonstramos que a tecnologia pode ser 
+                uma aliada poderosa na construção de um futuro mais sustentável, inspirando outras iniciativas e 
+                provando que inovação e consciência ambiental caminham juntas.
               </p>
               <div className="bg-primary/5 rounded-lg p-4 border border-primary/20">
                 <p className="text-sm text-center italic">
-                  "Juntos, transformamos pequenas ações em grandes mudanças para o nosso planeta."
+                  "Da academia para a sociedade: transformando conhecimento em ação pelo meio ambiente."
                 </p>
               </div>
             </CardContent>

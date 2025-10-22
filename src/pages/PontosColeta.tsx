@@ -15,38 +15,38 @@ import { MapPin, ArrowLeft, Trash2 } from "lucide-react";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 
-// Pontos de coleta mockados
+// Pontos de coleta com endereços reais da Zona Sul de São Paulo
 const pontosColeta = [
   {
     id: 1,
-    nome: "EcoPonto Centro",
-    endereco: "Rua das Flores, 123 - Centro",
-    lat: -23.550520,
-    lng: -46.633308,
+    nome: "EcoPonto Shopping Ibirapuera",
+    endereco: "Av. Ibirapuera, 3103 - Moema, São Paulo - SP",
+    lat: -23.5975,
+    lng: -46.6575,
     tipos: ["Plástico", "Papel", "Vidro", "Metal"]
   },
   {
     id: 2,
-    nome: "Cooperativa ReciclaVida",
-    endereco: "Av. Reciclagem, 456 - Zona Norte",
-    lat: -23.540520,
-    lng: -46.643308,
+    nome: "Cooperativa ReciclaVida Brooklin",
+    endereco: "Av. Eng. Luís Carlos Berrini, 1461 - Brooklin, São Paulo - SP",
+    lat: -23.6129,
+    lng: -46.6925,
     tipos: ["Plástico", "Papel", "Metal", "Eletrônicos"]
   },
   {
     id: 3,
-    nome: "EcoPonto Norte",
-    endereco: "Rua Sustentável, 789 - Zona Norte",
-    lat: -23.530520,
-    lng: -46.623308,
+    nome: "EcoPonto Parque Ibirapuera",
+    endereco: "Av. Pedro Álvares Cabral - Vila Mariana, São Paulo - SP",
+    lat: -23.5875,
+    lng: -46.6572,
     tipos: ["Vidro", "Papel", "Plástico"]
   },
   {
     id: 4,
-    nome: "Centro de Triagem Sul",
-    endereco: "Av. Ambiental, 321 - Zona Sul",
-    lat: -23.560520,
-    lng: -46.653308,
+    nome: "Centro de Triagem Morumbi",
+    endereco: "Av. Roque Petroni Júnior, 1089 - Morumbi, São Paulo - SP",
+    lat: -23.6234,
+    lng: -46.6978,
     tipos: ["Plástico", "Papel", "Vidro", "Metal", "Eletrônicos"]
   }
 ];

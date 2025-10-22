@@ -1,10 +1,26 @@
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Logo from "@/components/Logo";
 import FloatingChat from "@/components/FloatingChat";
 import { MapPin, Trash2, Award, Users } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 const Home = () => {
+  const [user, setUser] = useState<any>(null);
+
+  useEffect(() => {
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setUser(session?.user || null);
+    });
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      setUser(session?.user || null);
+    });
+
+    return () => subscription.unsubscribe();
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -15,11 +31,15 @@ const Home = () => {
             <Button variant="ghost" onClick={() => window.location.href = '/pontos-coleta'}>
               Pontos de Coleta
             </Button>
-            <Button variant="ghost">Sobre</Button>
+            <Button variant="ghost" onClick={() => window.location.href = '/sobre'}>Sobre</Button>
             <Button variant="ghost" onClick={() => window.location.href = '/coletas'}>
               Minhas Coletas
             </Button>
-            <Button onClick={() => window.location.href = '/login'}>Entrar</Button>
+            {user ? (
+              <Button onClick={() => window.location.href = '/perfil'}>Perfil</Button>
+            ) : (
+              <Button onClick={() => window.location.href = '/login'}>Entrar</Button>
+            )}
           </nav>
         </div>
       </header>
@@ -41,7 +61,12 @@ const Home = () => {
             >
               Encontrar Pontos de Coleta
             </Button>
-            <Button size="lg" variant="outline" className="h-12 px-8 text-base rounded-xl">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="h-12 px-8 text-base rounded-xl"
+              onClick={() => window.location.href = '/como-funciona'}
+            >
               Saiba Mais
             </Button>
           </div>
@@ -113,6 +138,7 @@ const Home = () => {
                 size="lg" 
                 variant="secondary" 
                 className="h-12 px-8 text-base rounded-xl"
+                onClick={() => window.location.href = '/cadastro'}
               >
                 Criar Conta Grátis
               </Button>

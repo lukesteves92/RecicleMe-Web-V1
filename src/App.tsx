@@ -15,6 +15,7 @@ import PontosColeta from "./pages/PontosColeta";
 import Perfil from "./pages/Perfil";
 import Admin from "./pages/Admin";
 import Sobre from "./pages/Sobre";
+import ComoFunciona from "./pages/ComoFunciona";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/perfil" element={<Perfil />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/sobre" element={<Sobre />} />
+          <Route path="/como-funciona" element={<ComoFunciona />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
